@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Админ-панель</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<header class="mb-5 container-fluid bg-white shadow-sm py-1">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-content-center gap-2" href="../index.html">
+                <img src="../../img/logo.png" alt="Мой Не Сам" class="object-fit-contain" height="30">
+                Мой Не Сам
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <nav class="navbar-nav">
+                    <a class="nav-link" href="index.html">Админ-панель</a>
+                    <a class="nav-link" href="../../applications/index.blade.php">Мои заявки</a>
+                    <a class="nav-link" href="../../auth/register.blade.php">Регистрация</a>
+                    <a class="nav-link" href="../../auth/login.blade.php">Вход</a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container flex-grow-1">
+    <h1 class="mb-3">Админ-панель</h1>
+
+    <div class="row g-3">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="p-3 rounded-3 shadow-sm border bg-white">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div>Послестроительная уборка</div>
+                    <div class="bg-warning rounded-2 py-1 px-2">В работе</div>
+                </div>
+
+                <div class="d-flex align-items-end justify-content-between mb-3">
+                    <div>
+                        <div>+7(999)-999-99-99</div>
+                        <div>Банковская карта</div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <div>Пушкина 30</div>
+                        <time datetime="2026-03-12T12:00">12 марта 2026 г. 12:00</time>
+                    </div>
+                </div>
+
+                <form class="status-form needs-validation" novalidate>
+                    <div class="mb-3">
+                        <select name="status" class="form-select" required>
+                            <option value="pending">В работе</option>
+                            <option value="success">Выполнено</option>
+                            <option value="cancelled">Отменено</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 reason d-none">
+                        <textarea name="reason" class="form-control" placeholder="Укажите причину" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Изменить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="p-3 rounded-3 shadow-sm border bg-white">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div>Послестроительная уборка</div>
+                    <div class="bg-warning rounded-2 py-1 px-2">В работе</div>
+                </div>
+
+                <div class="d-flex align-items-end justify-content-between mb-3">
+                    <div>
+                        <div>+7(999)-999-99-99</div>
+                        <div>Банковская карта</div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <div>Пушкина 30</div>
+                        <time datetime="2026-03-12T12:00">12 марта 2026 г. 12:00</time>
+                    </div>
+                </div>
+
+                <form class="status-form needs-validation" novalidate>
+                    <div class="mb-3">
+                        <select name="status" class="form-select" required>
+                            <option value="pending">В работе</option>
+                            <option value="success">Выполнено</option>
+                            <option value="cancelled">Отменено</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 reason d-none">
+                        <textarea name="reason" class="form-control" placeholder="Укажите причину" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Изменить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="p-3 rounded-3 shadow-sm border bg-white">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div>Послестроительная уборка</div>
+                    <div class="bg-warning rounded-2 py-1 px-2">В работе</div>
+                </div>
+
+                <div class="d-flex align-items-end justify-content-between mb-3">
+                    <div>
+                        <div>+7(999)-999-99-99</div>
+                        <div>Банковская карта</div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <div>Пушкина 30</div>
+                        <time datetime="2026-03-12T12:00">12 марта 2026 г. 12:00</time>
+                    </div>
+                </div>
+
+                <form class="status-form needs-validation" novalidate>
+                    <div class="mb-3">
+                        <select name="status" class="form-select" required>
+                            <option value="pending">В работе</option>
+                            <option value="success">Выполнено</option>
+                            <option value="cancelled">Отменено</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 reason d-none">
+                        <textarea name="reason" class="form-control" placeholder="Укажите причину" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Изменить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="p-3 rounded-3 shadow-sm border bg-white">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div>Послестроительная уборка</div>
+                    <div class="bg-warning rounded-2 py-1 px-2">В работе</div>
+                </div>
+
+                <div class="d-flex align-items-end justify-content-between mb-3">
+                    <div>
+                        <div>+7(999)-999-99-99</div>
+                        <div>Банковская карта</div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <div>Пушкина 30</div>
+                        <time datetime="2026-03-12T12:00">12 марта 2026 г. 12:00</time>
+                    </div>
+                </div>
+
+                <form class="status-form needs-validation" novalidate>
+                    <div class="mb-3">
+                        <select name="status" class="form-select" required>
+                            <option value="pending">В работе</option>
+                            <option value="success">Выполнено</option>
+                            <option value="cancelled">Отменено</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 reason d-none">
+                        <textarea name="reason" class="form-control" placeholder="Укажите причину" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Изменить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="mt-5 container-fluid bg-white">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavFooter"
+                    aria-controls="navbarNavFooter" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavFooter">
+                <nav class="navbar-nav">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+<script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+
+<script>
+    (() => {
+        'use strict'
+
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+
+    const selects = document.querySelectorAll('select[name="status"]');
+
+    selects.forEach(select => {
+        select.addEventListener('change', function () {
+            const reason = select.closest('form').querySelector('.reason');
+            reason.classList.toggle('d-none', this.value !== 'cancelled');
+        });
+    });
+
+    const statusForms = document.querySelectorAll('.status-form');
+
+    statusForms.forEach(form => {
+        form.addEventListener('submit', function () {
+            const select = this.querySelector('select[name="status"]');
+
+            if (select.value !== 'cancelled') {
+                this.submit();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
