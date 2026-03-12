@@ -29,6 +29,7 @@ class Application extends Model
     protected $casts = [
         'date' => 'datetime',
         'payment_method' => PaymentMethod::class,
+        'status' => AppStatus::class,
     ];
 
     public function service(): BelongsTo

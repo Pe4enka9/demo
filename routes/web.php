@@ -26,3 +26,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/applications/create', [ApplicationController::class, 'create'])->name('applications.create');
     Route::post('/applications', [ApplicationController::class, 'store'])->name('applications.store');
 });
+
+// Админ
+Route::middleware('admin')->group(function () {
+    Route::get('/admin/applications', [\App\Http\Controllers\Admin\ApplicationController::class, 'index'])->name('admin.applications.index');
+    Route::patch('/admin/applications/{application}', [\App\Http\Controllers\Admin\ApplicationController::class, 'update'])->name('admin.applications.update');
+});
